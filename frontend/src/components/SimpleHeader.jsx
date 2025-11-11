@@ -17,7 +17,7 @@ const SimpleHeader = () => {
 
           {/* Title */}
           <div className="hidden md:block">
-            <h1 className="text-xl font-semibold text-gray-900">Support Center</h1>
+            <h1 className="text-xl font-semibold text-gray-900">Claritone Support Center</h1>
           </div>
 
           {/* Contact Info */}
