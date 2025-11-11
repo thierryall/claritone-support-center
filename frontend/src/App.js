@@ -1,27 +1,19 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import TrendingTopics from './components/TrendingTopics';
-import HowToVideos from './components/HowToVideos';
-import UserGuides from './components/UserGuides';
-import KnowledgeBase from './components/KnowledgeBase';
-import ContactSupport from './components/ContactSupport';
-import Footer from './components/Footer';
+import SimpleHeader from './components/SimpleHeader';
+import VideoHero from './components/VideoHero';
+import VideoGrid from './components/VideoGrid';
+import SimpleFooter from './components/SimpleFooter';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <HeroSection />
-        <TrendingTopics />
-        <HowToVideos />
-        <UserGuides />
-        <KnowledgeBase />
-        <ContactSupport />
+    <div className="App min-h-screen flex flex-col">
+      <SimpleHeader />
+      <main className="flex-grow">
+        <VideoHero />
+        <VideoGrid />
       </main>
-      <Footer />
+      <SimpleFooter />
     </div>
   );
 }
