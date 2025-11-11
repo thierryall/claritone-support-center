@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from './ui/button';
 
 const StickyBanner = () => {
+  useEffect(() => {
+    // Load Calendly script if not already loaded
+    if (!document.querySelector('script[src*="calendly"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/your-calendly-username/onboarding-call'
+      });
+    }
+  };
+
   return (
     <div className="sticky top-0 z-[100] bg-[#ECC274] border-b border-[#d9b065] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
