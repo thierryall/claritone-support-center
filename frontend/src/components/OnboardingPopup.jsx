@@ -27,8 +27,8 @@ const OnboardingPopup = () => {
           <X className="w-5 h-5" />
         </button>
 
-        {/* Yellow accent bar */}
-        <div className="h-2 bg-gradient-to-r from-[#ffd700] to-[#ffed4e] rounded-t-2xl"></div>
+        {/* Teal accent bar */}
+        <div className="h-2 bg-gradient-to-r from-[#20B2AA] to-[#48D1CC] rounded-t-2xl"></div>
 
         <div className="p-8">
           {/* Icon */}
