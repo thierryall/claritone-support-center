@@ -92,9 +92,7 @@ const OnboardingPopup = () => {
           {/* CTA Buttons */}
           <div className="space-y-3">
             <Button 
-              onClick={() => {
-                window.location.href = '/booking';
-              }}
+              onClick={openCalendly}
               className="w-full bg-[#3d4f5c] hover:bg-[#2d3f4c] text-white font-semibold py-6 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
               Book Your Free Call Now
