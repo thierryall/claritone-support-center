@@ -73,22 +73,22 @@ const Header = () => {
 
           {/* Right side actions */}
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-[#3d4f5c] transition-colors">
+            <button className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-[#20B2AA] transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
               </svg>
               Online hearing test
             </button>
-            <button className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-[#3d4f5c] transition-colors">
+            <button className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-[#20B2AA] transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               Professional Login
             </button>
-            <Button className="bg-[#f0f4f8] hover:bg-[#e0e8f0] text-[#3d4f5c] font-semibold border border-[#3d4f5c]">
+            <Button className="bg-[#20B2AA] hover:bg-[#1a8f88] text-white font-semibold border-none">
               Find A Provider
             </Button>
-            <button className="text-gray-900 hover:text-[#3d4f5c] transition-colors">
+            <button className="text-gray-900 hover:text-[#20B2AA] transition-colors">
               <Search className="w-5 h-5" />
             </button>
           </div>
