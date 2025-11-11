@@ -37,7 +37,7 @@ const VideoGrid = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {category.title}
                 </h3>
 
