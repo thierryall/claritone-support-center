@@ -55,15 +55,15 @@ const OnboardingPopup = () => {
             {/* Benefits list */}
             <div className="mt-6 space-y-3 text-left">
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-[#ffd700] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-[#20B2AA] flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-700">Free personalized setup assistance</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-[#ffd700] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-[#20B2AA] flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-700">Expert guidance from our team</span>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-[#ffd700] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-[#20B2AA] flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-700">Get the most out of your hearing aids</span>
               </div>
             </div>
