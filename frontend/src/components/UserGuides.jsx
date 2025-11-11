@@ -20,7 +20,7 @@ const UserGuides = () => {
                 />
               </div>
               {/* Decorative accent */}
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#C8DC00] rounded-full opacity-30 blur-2xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#3d4f5c] rounded-full opacity-20 blur-2xl"></div>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ const UserGuides = () => {
             </h2>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Prefer written guides? Download clear, step-by-step user manuals with helpful tips and troubleshooting advice. Our user guides are designed to help you get the most out of your Phonak hearing aids and accessories.
+              Prefer written guides? Download clear, step-by-step user manuals with helpful tips and troubleshooting advice. Our user guides are designed to help you get the most out of your Claritone hearing aids and accessories.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -48,13 +48,13 @@ const UserGuides = () => {
                       </h3>
                       <div className="flex items-center gap-3">
                         <button 
-                          className="flex items-center gap-2 text-[#003C50] hover:text-[#C8DC00] transition-colors"
+                          className="flex items-center gap-2 text-[#3d4f5c] hover:text-[#2d3f4c] transition-colors"
                           onClick={() => window.alert('PDF download would start here')}
                         >
                           <Download className="w-5 h-5" />
                           <span className="text-sm font-medium">Download</span>
                         </button>
-                        <button className="text-gray-600 hover:text-[#003C50] transition-colors">
+                        <button className="text-gray-600 hover:text-[#3d4f5c] transition-colors">
                           <Share2 className="w-5 h-5" />
                         </button>
                       </div>
@@ -65,7 +65,7 @@ const UserGuides = () => {
             </div>
 
             <div className="mt-8">
-              <Button className="bg-[#C8DC00] hover:bg-[#B5C900] text-black font-medium px-8 py-6 text-base">
+              <Button className="bg-[#f0f4f8] hover:bg-[#e0e8f0] text-[#3d4f5c] font-semibold border border-[#3d4f5c] px-8 py-6 text-base">
                 View all user guides
               </Button>
             </div>

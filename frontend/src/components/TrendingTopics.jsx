@@ -44,7 +44,7 @@ const TrendingTopics = () => {
                   <p className="text-gray-700 leading-relaxed">
                     {topic.description}
                   </p>
-                  <button className="flex items-center gap-2 text-[#003C50] hover:text-[#C8DC00] font-medium transition-colors group">
+                  <button className="flex items-center gap-2 text-[#3d4f5c] hover:text-[#2d3f4c] font-medium transition-colors group">
                     {topic.linkText}
                     <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                   </button>
