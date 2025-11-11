@@ -6,13 +6,33 @@ const OnboardingPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // Load Calendly script
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
     // Show popup after a short delay
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 1000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
   }, []);
+
+  const openCalendly = () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/your-calendly-username/onboarding-call'
+      });
+      setIsOpen(false);
+    }
+  };
 
   if (!isOpen) return null;
 
