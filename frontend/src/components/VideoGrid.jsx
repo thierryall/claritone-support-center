@@ -24,7 +24,7 @@ const VideoGrid = () => {
           {videoCategories.map(category => (
             <Card 
               key={category.id} 
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-gray-50 border-none"
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-gray-100 border-none"
             >
               <CardContent className="p-8 flex flex-col items-center text-center">
                 {/* Circular Image */}
