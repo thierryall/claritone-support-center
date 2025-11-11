@@ -29,7 +29,7 @@ const StickyBanner = () => {
           </p>
           <Button 
             className="bg-[#3d4f5c] hover:bg-[#2d3f4c] text-white font-semibold px-6 py-2 whitespace-nowrap"
-            onClick={() => window.location.href = '/booking'}
+            onClick={openCalendly}
           >
             Book
           </Button>
