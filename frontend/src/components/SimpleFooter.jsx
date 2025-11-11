@@ -9,7 +9,7 @@ const SimpleFooter = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_audio-helper-2/artifacts/bsjuhap7_Copy%20of%20Copy%20of%20Logo%20jpeg.jpg" 
               alt="Claritone" 
-              className="h-10 w-auto brightness-0 invert"
+              className="h-12 w-auto"
             />
           </div>
           
