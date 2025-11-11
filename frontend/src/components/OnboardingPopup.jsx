@@ -33,8 +33,8 @@ const OnboardingPopup = () => {
         <div className="p-8">
           {/* Icon */}
           <div className="flex justify-center mb-6">
-            <div className="w-20 h-20 bg-gradient-to-br from-[#ffd700] to-[#ffed4e] rounded-full flex items-center justify-center shadow-lg">
-              <Phone className="w-10 h-10 text-gray-900" />
+            <div className="w-20 h-20 bg-gradient-to-br from-[#20B2AA] to-[#48D1CC] rounded-full flex items-center justify-center shadow-lg">
+              <Phone className="w-10 h-10 text-white" />
             </div>
           </div>
 
