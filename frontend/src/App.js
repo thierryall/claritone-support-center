@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import OnboardingPopup from './components/OnboardingPopup';
 import StickyBanner from './components/StickyBanner';
 import SimpleHeader from './components/SimpleHeader';
 import VideoHero from './components/VideoHero';
@@ -9,6 +10,7 @@ import SimpleFooter from './components/SimpleFooter';
 function App() {
   return (
     <div className="App min-h-screen flex flex-col">
+      <OnboardingPopup />
       <StickyBanner />
       <SimpleHeader />
       <main className="flex-grow">
