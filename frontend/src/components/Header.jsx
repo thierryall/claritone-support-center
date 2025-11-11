@@ -63,7 +63,7 @@ const Header = () => {
                 onMouseEnter={() => item.hasDropdown && setActiveMenu(index)}
                 onMouseLeave={() => setActiveMenu(null)}
               >
-                <button className="flex items-center gap-1 text-sm font-medium text-gray-900 hover:text-[#20B2AA] transition-colors">
+                <button className="flex items-center gap-1 text-sm font-medium text-gray-900 hover:text-[#ECC274] transition-colors">
                   {item.label}
                   {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
                 </button>
