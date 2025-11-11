@@ -28,7 +28,7 @@ const OnboardingPopup = () => {
   const openCalendly = () => {
     if (window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/your-calendly-username/onboarding-call'
+        url: 'https://calendly.com/thierry-allain/30min'
       });
       setIsOpen(false);
     }
