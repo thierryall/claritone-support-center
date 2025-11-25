@@ -35,7 +35,7 @@ export const supportVideos = [
     title: 'Adjusting Volume',
     description: 'Control the volume of your hearing aids for optimal comfort.',
     videoId: 'JJq-B1QSHZs',
-    thumbnail: 'https://img.youtube.com/vi/JJq-B1QSHZs/mqdefault.jpg'
+    thumbnail: 'https://img.youtube.com/vi/JJq-B1QSHZs/hqdefault.jpg'
   },
   {
     id: 6,
