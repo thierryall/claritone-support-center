@@ -1,84 +1,90 @@
 // Mock data for Claritone Video Support
+// To add your videos: Get the video ID from YouTube URL (e.g., from https://www.youtube.com/watch?v=ABC123, the ID is ABC123)
+// Or extract all IDs from your playlist: https://www.youtube.com/playlist?list=PLxXKOHgxGL6px4zjbaHlg6hBL9mpeTB9j
 
-export const videoCategories = [
+export const supportVideos = [
   {
     id: 1,
-    title: 'Hearing Aid Cleaning & care',
-    description: 'Learn the best practices to keep your Claritone hearing aids in top condition, ensuring they last longer and work better.',
-    image: 'https://images.unsplash.com/photo-1692160756286-577a79b17e68?w=600&h=600&fit=crop',
-    videoCount: 4,
-    videos: [
-      { id: 1, title: 'Daily Cleaning Routine', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Deep Cleaning Guide', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Changing Wax Filters', videoId: 'dQw4w9WgXcQ' },
-      { id: 4, title: 'Storage and Maintenance', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Getting Started with Your Claritone Hearing Aids',
+    description: 'Learn how to unbox and set up your new Claritone hearing aids for the first time.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   },
   {
     id: 2,
-    title: 'Pairing Your Hearing Aids',
-    description: 'Discover easy, step-by-step how-to videos on pairing Claritone hearing aids with your smartphone. Enhance your listening experience with seamless connectivity. Get started now.',
-    image: 'https://images.unsplash.com/photo-1713403857782-80a39b5af884?w=600&h=600&fit=crop',
-    videoCount: 5,
-    videos: [
-      { id: 1, title: 'Pairing to iPhone', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Pairing to Android', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Pairing to iPad', videoId: 'dQw4w9WgXcQ' },
-      { id: 4, title: 'Troubleshooting Bluetooth', videoId: 'dQw4w9WgXcQ' },
-      { id: 5, title: 'Multiple Device Pairing', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Daily Cleaning and Care',
+    description: 'Proper cleaning techniques to keep your hearing aids in optimal condition.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   },
   {
     id: 3,
-    title: 'Connect to Wireless Accessories',
-    description: 'Discover the easy steps to connect your Claritone hearing aids to essential wireless accessories like the partner mic and TV connector.',
-    image: 'https://images.unsplash.com/photo-1668649176554-3ad841a780d0?w=600&h=600&fit=crop',
-    videoCount: 3,
-    videos: [
-      { id: 1, title: 'TV Connector Setup', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Partner Mic Connection', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Remote Control Guide', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Pairing to iPhone via Bluetooth',
+    description: 'Step-by-step guide to connect your Claritone hearing aids to your iPhone.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   },
   {
     id: 4,
-    title: 'Using the Claritone App',
-    description: 'Complete guide to the Claritone companion mobile app. Learn how to adjust settings, customize programs, and get the most from your hearing aids.',
-    image: 'https://images.unsplash.com/photo-1692160756327-f0481e950b28?w=600&h=600&fit=crop',
-    videoCount: 6,
-    videos: [
-      { id: 1, title: 'App Installation & Setup', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Adjusting Volume', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Custom Programs', videoId: 'dQw4w9WgXcQ' },
-      { id: 4, title: 'Finding Lost Hearing Aids', videoId: 'dQw4w9WgXcQ' },
-      { id: 5, title: 'Remote Support', videoId: 'dQw4w9WgXcQ' },
-      { id: 6, title: 'App Troubleshooting', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Pairing to Android Devices',
+    description: 'Connect your hearing aids to Android smartphones and tablets.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   },
   {
     id: 5,
-    title: 'Battery & Charging',
-    description: 'Master battery management and charging techniques. Learn best practices for maximizing battery life and proper charging procedures.',
-    image: 'https://images.unsplash.com/photo-1709715357479-591f9971fb05?w=600&h=600&fit=crop',
-    videoCount: 3,
-    videos: [
-      { id: 1, title: 'Charging Your Hearing Aids', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Battery Life Tips', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Changing Disposable Batteries', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Charging Your Hearing Aids',
+    description: 'Best practices for charging and battery maintenance.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   },
   {
     id: 6,
-    title: 'Troubleshooting',
-    description: 'Quick solutions for common issues. From no sound problems to connectivity issues, find fast fixes to keep your hearing aids working perfectly.',
-    image: 'https://images.unsplash.com/photo-1758686254545-2e8a33d39adb?w=600&h=600&fit=crop',
-    videoCount: 5,
-    videos: [
-      { id: 1, title: 'No Sound? Quick Fixes', videoId: 'dQw4w9WgXcQ' },
-      { id: 2, title: 'Resetting Your Device', videoId: 'dQw4w9WgXcQ' },
-      { id: 3, title: 'Feedback Issues', videoId: 'dQw4w9WgXcQ' },
-      { id: 4, title: 'Connectivity Problems', videoId: 'dQw4w9WgXcQ' },
-      { id: 5, title: 'When to Contact Support', videoId: 'dQw4w9WgXcQ' }
-    ]
+    title: 'Changing the Wax Filter',
+    description: 'How to replace the wax filter on your Claritone hearing aids.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 7,
+    title: 'Troubleshooting: No Sound',
+    description: 'Quick fixes when your hearing aids are not producing sound.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 8,
+    title: 'Resetting Your Hearing Aids',
+    description: 'How to perform a soft reset when your device is unresponsive.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 9,
+    title: 'Using the Claritone Mobile App',
+    description: 'Complete guide to the Claritone companion app and its features.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 10,
+    title: 'Finding Lost Hearing Aids',
+    description: 'Use the Claritone app to locate misplaced hearing aids.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 11,
+    title: 'Adjusting Volume Settings',
+    description: 'Learn how to adjust volume levels for different environments.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+  },
+  {
+    id: 12,
+    title: 'TV Connector Setup',
+    description: 'How to set up and use the Claritone TV Connector.',
+    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
+    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
   }
 ];

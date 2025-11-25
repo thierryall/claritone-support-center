@@ -1,106 +1,85 @@
 import React, { useState } from 'react';
-import { X, Play } from 'lucide-react';
-import { videoCategories } from '../mockData';
+import { X, Play, Clock } from 'lucide-react';
+import { supportVideos } from '../mockData';
 import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
 
 const VideoGrid = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
-  const openCategory = (category) => {
-    setSelectedCategory(category);
-  };
-
-  const closeCategory = () => {
-    setSelectedCategory(null);
-  };
+  const filteredVideos = supportVideos.filter(video =>
+    video.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    video.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Category Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {videoCategories.map(category => (
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Search Bar */}
+        <div className="mb-8">
+          <input
+            type="text"
+            placeholder="Search videos..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#20B2AA] focus:border-transparent"
+          />
+        </div>
+
+        {/* Video Count */}
+        <div className="mb-6">
+          <p className="text-gray-600">
+            Showing {filteredVideos.length} {filteredVideos.length === 1 ? 'video' : 'videos'}
+          </p>
+        </div>
+
+        {/* Video List */}
+        <div className="space-y-4">
+          {filteredVideos.map(video => (
             <Card 
-              key={category.id} 
-              className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-gray-100 border-none"
+              key={video.id} 
+              className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer border border-gray-200"
+              onClick={() => setSelectedVideo(video)}
             >
-              <CardContent className="p-8 flex flex-col items-center text-center">
-                {/* Circular Image */}
-                <div className="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-lg">
-                  <img 
-                    src={category.image} 
-                    alt={category.title}
-                    className="w-full h-full object-cover"
-                  />
+              <CardContent className="p-0">
+                <div className="flex flex-col md:flex-row">
+                  {/* Thumbnail */}
+                  <div className="relative md:w-80 h-48 md:h-auto bg-gray-200 overflow-hidden flex-shrink-0 group">
+                    <img 
+                      src={video.thumbnail} 
+                      alt={video.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="bg-white rounded-full p-4">
+                        <Play className="w-8 h-8 text-[#20B2AA]" fill="currentColor" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#20B2AA] transition-colors">
+                      {video.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {video.description}
+                    </p>
+                    <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
+                      <Play className="w-4 h-4" />
+                      <span>Click to watch</span>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {category.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                  {category.description}
-                </p>
-
-                {/* Watch Videos Button */}
-                <Button 
-                  onClick={() => openCategory(category)}
-                  variant="ghost"
-                  className="text-gray-700 hover:text-gray-900 font-medium"
-                >
-                  Watch videos
-                </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Category Videos Modal */}
-        {selectedCategory && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4" onClick={closeCategory}>
-            <div className="relative w-full max-w-4xl bg-white rounded-lg" onClick={(e) => e.stopPropagation()}>
-              <button 
-                onClick={closeCategory}
-                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-              >
-                <X className="w-8 h-8" />
-              </button>
-              
-              <div className="p-8">
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img 
-                      src={selectedCategory.image} 
-                      alt={selectedCategory.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">{selectedCategory.title}</h2>
-                    <p className="text-gray-600">{selectedCategory.videoCount} videos</p>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto">
-                  {selectedCategory.videos.map(video => (
-                    <button
-                      key={video.id}
-                      onClick={() => setSelectedVideo(video)}
-                      className="flex items-center gap-4 p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors text-left group"
-                    >
-                      <div className="w-12 h-12 bg-[#3d4f5c] rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-[#2d3f4c] transition-colors">
-                        <Play className="w-6 h-6 text-white" fill="currentColor" />
-                      </div>
-                      <span className="font-medium text-gray-900">{video.title}</span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
+        {/* No Results */}
+        {filteredVideos.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">No videos found matching your search.</p>
           </div>
         )}
 
@@ -127,7 +106,8 @@ const VideoGrid = () => {
                   ></iframe>
                 </div>
                 <div className="p-6">
-                  <h2 className="text-2xl font-bold text-gray-900">{selectedVideo.title}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">{selectedVideo.title}</h2>
+                  <p className="text-gray-700">{selectedVideo.description}</p>
                 </div>
               </div>
             </div>
