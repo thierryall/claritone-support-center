@@ -33,42 +33,40 @@ const VideoGrid = () => {
           </p>
         </div>
 
-        {/* Video List */}
-        <div className="space-y-4">
+        {/* Video Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredVideos.map(video => (
             <Card 
               key={video.id} 
-              className="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer border border-gray-200"
+              className="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-200 transform hover:-translate-y-1"
               onClick={() => setSelectedVideo(video)}
             >
               <CardContent className="p-0">
-                <div className="flex flex-col md:flex-row">
-                  {/* Thumbnail */}
-                  <div className="relative md:w-80 h-48 md:h-auto bg-gray-200 overflow-hidden flex-shrink-0 group">
-                    <img 
-                      src={video.thumbnail} 
-                      alt={video.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="bg-white rounded-full p-4">
-                        <Play className="w-8 h-8 text-[#20B2AA]" fill="currentColor" />
-                      </div>
+                {/* Thumbnail */}
+                <div className="relative aspect-video bg-gray-200 overflow-hidden group">
+                  <img 
+                    src={video.thumbnail} 
+                    alt={video.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="bg-white rounded-full p-4">
+                      <Play className="w-8 h-8 text-[#20B2AA]" fill="currentColor" />
                     </div>
                   </div>
+                </div>
 
-                  {/* Content */}
-                  <div className="flex-1 p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#20B2AA] transition-colors">
-                      {video.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {video.description}
-                    </p>
-                    <div className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-                      <Play className="w-4 h-4" />
-                      <span>Click to watch</span>
-                    </div>
+                {/* Content */}
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-[#20B2AA] transition-colors">
+                    {video.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed line-clamp-2">
+                    {video.description}
+                  </p>
+                  <div className="mt-3 flex items-center gap-2 text-xs text-gray-500">
+                    <Play className="w-3 h-3" />
+                    <span>Click to watch</span>
                   </div>
                 </div>
               </CardContent>
