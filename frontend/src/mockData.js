@@ -63,7 +63,7 @@ export const supportVideos = [
     title: 'Replacing Wax Guard',
     description: 'How to change the wax guard to maintain sound quality and performance.',
     videoId: 'DB9KINH-cD4',
-    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg'
+    thumbnail: `https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg?v=${Date.now()}`
   },
   {
     id: 10,
