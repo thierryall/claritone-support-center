@@ -1,90 +1,75 @@
-// Mock data for Claritone Video Support
-// To add your videos: Get the video ID from YouTube URL (e.g., from https://www.youtube.com/watch?v=ABC123, the ID is ABC123)
-// Or extract all IDs from your playlist: https://www.youtube.com/playlist?list=PLxXKOHgxGL6px4zjbaHlg6hBL9mpeTB9j
+// Claritone Video Support - Real Videos from YouTube Playlist
+// Playlist: https://www.youtube.com/playlist?list=PLxXKOHgxGL6px4zjbaHlg6hBL9mpeTB9j
 
 export const supportVideos = [
   {
     id: 1,
-    title: 'Getting Started with Your Claritone Hearing Aids',
-    description: 'Learn how to unbox and set up your new Claritone hearing aids for the first time.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Unboxing & What\'s Inside',
+    description: 'See what comes in your Claritone hearing aid package and get ready for setup.',
+    videoId: 'lUi3aIK0H6A',
+    thumbnail: 'https://img.youtube.com/vi/lUi3aIK0H6A/mqdefault.jpg'
   },
   {
     id: 2,
-    title: 'Daily Cleaning and Care',
-    description: 'Proper cleaning techniques to keep your hearing aids in optimal condition.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Cut Whistling',
+    description: 'Learn how to eliminate whistling and feedback from your hearing aids.',
+    videoId: 'mqMNrjlL194',
+    thumbnail: 'https://img.youtube.com/vi/mqMNrjlL194/mqdefault.jpg'
   },
   {
     id: 3,
-    title: 'Pairing to iPhone via Bluetooth',
-    description: 'Step-by-step guide to connect your Claritone hearing aids to your iPhone.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'How to Put Hearing Aids On',
+    description: 'Step-by-step guide for properly wearing your Claritone hearing aids.',
+    videoId: 'SuXaVSE7xJY',
+    thumbnail: 'https://img.youtube.com/vi/SuXaVSE7xJY/mqdefault.jpg'
   },
   {
     id: 4,
-    title: 'Pairing to Android Devices',
-    description: 'Connect your hearing aids to Android smartphones and tablets.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Turning On and Off',
+    description: 'Learn how to power your hearing aids on and off correctly.',
+    videoId: 'XNKaoxPmBVc',
+    thumbnail: 'https://img.youtube.com/vi/XNKaoxPmBVc/mqdefault.jpg'
   },
   {
     id: 5,
-    title: 'Charging Your Hearing Aids',
-    description: 'Best practices for charging and battery maintenance.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Adjusting Volume',
+    description: 'Control the volume of your hearing aids for optimal comfort.',
+    videoId: 'JJq-B1QSHZ',
+    thumbnail: 'https://img.youtube.com/vi/JJq-B1QSHZ/mqdefault.jpg'
   },
   {
     id: 6,
-    title: 'Changing the Wax Filter',
-    description: 'How to replace the wax filter on your Claritone hearing aids.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Adjusting Modes',
+    description: 'Switch between different listening modes for various environments.',
+    videoId: 'RmZwKfjoQNM',
+    thumbnail: 'https://img.youtube.com/vi/RmZwKfjoQNM/mqdefault.jpg'
   },
   {
     id: 7,
-    title: 'Troubleshooting: No Sound',
-    description: 'Quick fixes when your hearing aids are not producing sound.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Troubleshooting: Battery Life',
+    description: 'Tips to maximize battery performance and troubleshoot power issues.',
+    videoId: 'aF3aI0yOTa8',
+    thumbnail: 'https://img.youtube.com/vi/aF3aI0yOTa8/mqdefault.jpg'
   },
   {
     id: 8,
-    title: 'Resetting Your Hearing Aids',
-    description: 'How to perform a soft reset when your device is unresponsive.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Cleaning Tips',
+    description: 'Proper cleaning techniques to keep your hearing aids in optimal condition.',
+    videoId: 'DB9KINH-cD4',
+    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg'
   },
   {
     id: 9,
-    title: 'Using the Claritone Mobile App',
-    description: 'Complete guide to the Claritone companion app and its features.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Replacing Wax Guard',
+    description: 'How to change the wax guard to maintain sound quality and performance.',
+    videoId: 'DB9KINH-cD4',
+    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg'
   },
   {
     id: 10,
-    title: 'Finding Lost Hearing Aids',
-    description: 'Use the Claritone app to locate misplaced hearing aids.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
-  },
-  {
-    id: 11,
-    title: 'Adjusting Volume Settings',
-    description: 'Learn how to adjust volume levels for different environments.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
-  },
-  {
-    id: 12,
-    title: 'TV Connector Setup',
-    description: 'How to set up and use the Claritone TV Connector.',
-    videoId: 'dQw4w9WgXcQ', // Replace with actual video ID from your playlist
-    thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg'
+    title: 'Charging & Battery Indicator',
+    description: 'Understanding the charging process and battery status indicators.',
+    videoId: 'XNKaoxPmBVc',
+    thumbnail: 'https://img.youtube.com/vi/XNKaoxPmBVc/mqdefault.jpg'
   }
 ];
