@@ -45,10 +45,10 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Support</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">How to Videos</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">User Guides</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Knowledge Base</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact Support</a></li>
+              <li><a href="#videos" className="text-gray-300 hover:text-white transition-colors">How to Videos</a></li>
+              <li><a href="tel:+13073161639" className="text-gray-300 hover:text-white transition-colors">Call: +1 307 316 1639</a></li>
+              <li><a href="mailto:support@claritone.net" className="text-gray-300 hover:text-white transition-colors">Email Support</a></li>
+              <li><a href="mailto:support@claritone.net" className="text-gray-300 hover:text-white transition-colors">Contact Support</a></li>
             </ul>
           </div>
 
