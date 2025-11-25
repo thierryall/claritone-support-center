@@ -22,11 +22,11 @@ const SimpleHeader = () => {
 
           {/* Contact Info */}
           <div className="flex items-center gap-6">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#3d4f5c] transition-colors">
+            <a href="tel:+13073161639" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#3d4f5c] transition-colors">
               <Phone className="w-4 h-4" />
               <span className="hidden sm:inline">Support</span>
             </a>
-            <a href="mailto:support@claritone.com" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#3d4f5c] transition-colors">
+            <a href="mailto:support@claritone.net" className="flex items-center gap-2 text-sm text-gray-700 hover:text-[#3d4f5c] transition-colors">
               <Mail className="w-4 h-4" />
               <span className="hidden sm:inline">Contact</span>
             </a>
