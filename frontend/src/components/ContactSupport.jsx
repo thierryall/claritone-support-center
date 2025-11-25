@@ -18,10 +18,12 @@ const ContactSupport = () => {
                 If you're unable to find the answers you're looking for, we're here to help. Our dedicated support team is ready to assist with any questions about your hearing aids, accessories, or troubleshooting needs.
               </p>
 
-              <Button className="bg-[#3d4f5c] hover:bg-[#2d3f4c] text-white font-medium px-8 py-6 text-base w-fit group">
-                Contact Support
-                <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <a href="mailto:support@claritone.net">
+                <Button className="bg-[#3d4f5c] hover:bg-[#2d3f4c] text-white font-medium px-8 py-6 text-base w-fit group">
+                  Contact Support
+                  <ArrowRight className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
             </div>
 
             {/* Right image */}
