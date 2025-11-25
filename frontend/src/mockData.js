@@ -55,15 +55,15 @@ export const supportVideos = [
     id: 8,
     title: 'Cleaning Tips',
     description: 'Proper cleaning techniques to keep your hearing aids in optimal condition.',
-    videoId: 'DB9KINH-cD4',
-    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg'
+    videoId: 'kDOmvg7N3pI',
+    thumbnail: 'https://img.youtube.com/vi/kDOmvg7N3pI/mqdefault.jpg'
   },
   {
     id: 9,
     title: 'Replacing Wax Guard',
     description: 'How to change the wax guard to maintain sound quality and performance.',
     videoId: 'DB9KINH-cD4',
-    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/hqdefault.jpg'
+    thumbnail: 'https://img.youtube.com/vi/DB9KINH-cD4/mqdefault.jpg'
   },
   {
     id: 10,
