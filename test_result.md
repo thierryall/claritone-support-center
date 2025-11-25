@@ -101,3 +101,86 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Test the Claritone Support Center website thoroughly. The site should be running at http://localhost:3000."
+
+frontend:
+  - task: "Page Load Test"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Initial testing - need to verify page loads, golden banner, Video Support heading, and 10 video cards"
+
+  - task: "Onboarding Popup Test"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/OnboardingPopup.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Need to test popup appearance, content, and interaction buttons"
+
+  - task: "Video Grid Test"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/VideoGrid.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Need to verify 10 videos display, thumbnails, titles, modal functionality"
+
+  - task: "Search Functionality Test"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/VideoGrid.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Need to test search filtering for cleaning and battery keywords"
+
+  - task: "Calendly Integration Test"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/components/StickyBanner.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "testing"
+          comment: "Need to test Book button functionality and Calendly widget opening"
+
+metadata:
+  created_by: "testing_agent"
+  version: "1.0"
+  test_sequence: 1
+
+test_plan:
+  current_focus:
+    - "Page Load Test"
+    - "Onboarding Popup Test"
+    - "Video Grid Test"
+    - "Search Functionality Test"
+    - "Calendly Integration Test"
+  stuck_tasks: []
+  test_all: true
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "testing"
+      message: "Starting comprehensive testing of Claritone Support Center website. Will test all 5 main features as requested."
