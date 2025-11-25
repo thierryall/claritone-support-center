@@ -14,7 +14,7 @@ export const supportVideos = [
     title: 'Cut Whistling',
     description: 'Learn how to eliminate whistling and feedback from your hearing aids.',
     videoId: 'mqMNrjlL194',
-    thumbnail: 'https://img.youtube.com/vi/mqMNrjlL194/mqdefault.jpg'
+    thumbnail: 'https://img.youtube.com/vi/mqMNrjlL194/hqdefault.jpg'
   },
   {
     id: 3,
